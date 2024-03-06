@@ -1,30 +1,39 @@
-RC6-Block-Cipher
+RC6-Block-Cipher with EC-El-Gamal key encryption & Rabin Signature
 ================
 
-Implementation of RC6 encryption and decryption  in python.
+Implementation of RC6 Block-Cipher encryption and decryption with EC-El-Gamal key encryption & Rabin Signature in Python.
 
 ## Specification
 
+#### RC6:
+* W = 32  // word size in bits
+  
+* R = 12  // number of rounds
+
+* B = 16  // key size in bytes
+
 * Block size : 4*32 bit blocks
 
-* Key size : 128bit
+#### EC-El-Gamal:
 
-* Rounds: 12
 
-## Features
+#### Rabin:
 
-* In cryptography, RC6 (Rivest Cipher 6) is a symmetric key block cipher derived from RC5. 
-
-* It was designed by Ron Rivest, Matt Robshaw, Ray Sidney, and Yiqun Lisa Yin
-
-* It was designed to meet the requirements of the Advanced Encryption Standard (AES) competition. 
-
-* It is a proprietary algorithm, patented by RSA Security.
 
 ## Functions
 
 * encrypt.py and decrypt.py are used to encrypt and decrypt using user input
 
-* cenc.py and cdec.py are used to encrypt and decrypt using command line input
+* ecElgamal.py is used to encrypt and decrypt the RC6's key using Elliptic curve
 
-* helper.py contains helper functions 
+* rabinSignature.py is used to sign and verify the signature of the input message 
+
+* helper.py contains helper functions
+
+## Getting started
+
+* Install the python package "tinyec" (pip install tinyec).
+
+* Run the program:
+  * To encrypt & decrypt a message, run encrypt.py & decrypt.py together. 
+     
