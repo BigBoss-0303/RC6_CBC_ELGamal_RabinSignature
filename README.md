@@ -15,9 +15,15 @@ Implementation of RC6 Block-Cipher encryption and decryption with EC-El-Gamal ke
 * Block size : 4*32 bit blocks
 
 #### EC-El-Gamal:
-
+* a = -1
+* b = 16
+* p = 29
+* G = randomly selected
 
 #### Rabin:
+* p = 187837245733959530296768935983
+* q = 850303114765709315608946810539
+* U = b'\x00' * i
 
 
 ## Functions
@@ -35,5 +41,6 @@ Implementation of RC6 Block-Cipher encryption and decryption with EC-El-Gamal ke
 * Install the python package "tinyec" (pip install tinyec).
 
 * Run the program:
-  * To encrypt & decrypt a message, run encrypt.py & decrypt.py together. 
+  * To encrypt & decrypt a message, run encrypt.py & decrypt.py together.
+  * Input some message for encryption.
      
